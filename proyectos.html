@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Generic - Urban by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/tabs.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".tab_content").hide();
+				$(".tab_content:first").show(); 
+
+				$("ul.tabs li").click(function() {
+					$("ul.tabs li").removeClass("active");
+					$(this).addClass("active");
+					$(".tab_content").hide();
+					var activeTab = $(this).attr("rel"); 
+					$("#"+activeTab).fadeIn(); 
+				});
+			});
+		</script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">JOSE</a></li>
+					<li><a href="proyectos.html">PROYECTOS</a></li>
+					<li><a href="formulario.html">CONTACTO</a></li>
+					<li><a href="skills.html">SKILLS</a></li>
+					<li><a href="contactos.html">REFERENCIAS</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Section -->
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<header class="align-center">
+								<h2>Proyectos</h2>
+								<p><strong>Te presento algunos de los proyectos en los que he trabajado tanto en la universidad como en lo diferentes lugares donde he laborado.</p>
+							</header>
+							<div id="container">
+								<ul class="tabs"> 
+									<li rel="tab1">Tres en Raya</li>
+									<li rel="tab2">Toma Pedidos</li>
+									<li rel="tab3">ATLAS - QA</li>
+								</ul>
+								<div id="tab1" class="tab_content"> 
+									<p><strong>Tres en raya, fue un proyecto que elabore cuando estudiaba en la USAC, fue una app para Android la cual era un juego del conocido “totito”, era un juego sencillo para 2 personas, el cual fue trabajado con Java para Android 4.2.
+									</p>
+								</div>
+								<div id="tab2" class="tab_content"> 
+									<p><strong>Toma Pedidos, fue un proyecto realizado con Java y Kotlin para tomar pedidos a través de dispositivos móviles, el proyecto consistía en una base de datos local, la cual enviaba los pedidos que los vendedores de la empresa realizaban, esos se enviaban a una BDD intermedia que luego a través de una aplicación en Visual creaba órdenes de venta en SAP B1
+									</p>
+								</div>
+								<div id="tab3" class="tab_content"> 
+									<p><strong>Atlas es el proyecto en el que laboro actualmente en Ericsson, es un sistema para una empresa de telecomunicaciones, mi labor en el proyecto está relacionado al área de QA, creo y diseño planes de pruebas, así como también realizo pruebas end-to-end de los diferentes desarrollos que se tienen en el proyecto.
+									</p>
+									<p><strong>En este proyecto también se tiene pensado implementar una fase de automatización de pruebas, por la cual nos estamos capacitando para poder apoyar en esta área.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/jose.araiz.5/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/araiz_jose/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
